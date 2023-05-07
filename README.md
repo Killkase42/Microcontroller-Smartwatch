@@ -14,3 +14,4 @@
 
 # First Prototype
  Drawing were made of each components and its respective connections. 
+![Microcontroller](20230507_133534.jpg)
