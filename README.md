@@ -15,3 +15,7 @@
 # First Prototype
  Drawing were made of each components and its respective connections. 
 ![Microcontroller](Images/20230507_133534.jpg)
+![Wifi Module](Images/20230507_133614.jpg)
+![Sensors](Images/20230507_133515.jpg)
+![OLED](Images/20230507_133628.jpg)
+![LiPO ICs](Images/20230507_133550.jpg)
