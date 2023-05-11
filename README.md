@@ -54,7 +54,7 @@
 
 All modules now functioned and software development would continue on a second prototype.
 
-#Second Prototype
+# Second Prototype
 
 First, a proper schematic was drawn.
 <figure>
