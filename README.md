@@ -14,25 +14,29 @@
 
 # First Prototype
  Drawing were made of each components and its respective connections. 
- 
-
-
 <figure>
     <img src="Images/20230507_133534.jpg" width="203" height="200">
     <figcaption>Microcontroller</figcaption>
 </figure>
 
+<figure>
+    <img src="Images/20230507_133614.jpg" width="185" height="200">
+    <figcaption>Wifi Module</figcaption>
+</figure>
 
-<center>Microcontroller</center>
+figure>
+    <img src="Images/20230507_133515.jpg" width="293" height="200">
+    <figcaption>Sensor Module</figcaption>
+</figure>
 
-![Wifi Module](Images/20230507_133614.jpg)
-<center>Wifi Module</center>
+figure>
+    <img src="Images/20230507_133628.jpg" width="162" height="200">
+    <figcaption>OLED Screen</figcaption>
+</figure>
 
-![Sensors](Images/20230507_133515.jpg)
-<center>Sensor Module</center>
+figure>
+    <img src="Images/20230507_133550.jpg" width="304" height="200">
+    <figcaption>LiPO ICs</figcaption>
+</figure>
 
-![OLED](Images/20230507_133628.jpg)
-<center>OLED Screen</center>
 
-![LiPO ICs](Images/20230507_133550.jpg)
-<center>LiPO ICs.</center>
