@@ -57,3 +57,13 @@ All modules now functioned and software development would continue on a second p
 #Second Prototype
 
 First, a proper schematic was drawn.
+<figure>
+    <figcaption>First Schematic</figcaption>
+    <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-05-11.png" width="282" height="200">
+</figure>
+
+Next, a PCB was designed. It was double-sided because there was not enough space to route all connections on one side. Spaces were left to screw on the OLED screen and insert a standard NATO watch strap.
+<figure>
+    <figcaption>First PCB</figcaption>
+    <img src="Images/firstPCB.PNG" width="190" height="200">
+</figure>
