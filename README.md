@@ -24,17 +24,17 @@
     <figcaption>Wifi Module</figcaption>
 </figure>
 
-figure>
+<figure>
     <img src="Images/20230507_133515.jpg" width="293" height="200">
     <figcaption>Sensor Module</figcaption>
 </figure>
 
-figure>
+<figure>
     <img src="Images/20230507_133628.jpg" width="162" height="200">
     <figcaption>OLED Screen</figcaption>
 </figure>
 
-figure>
+<figure>
     <img src="Images/20230507_133550.jpg" width="304" height="200">
     <figcaption>LiPO ICs</figcaption>
 </figure>
