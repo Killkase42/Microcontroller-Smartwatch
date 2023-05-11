@@ -40,7 +40,7 @@
     <img src="Images/20230507_133550.jpg" width="304" height="200">
 </figure>
 
- An initial prototype was then constructed on a solderless breadboard. Various breakout boards, a TQFP chip adapter, and a basic LD33V power supply were used.
+ An initial prototype was then constructed on a solderless breadboard. Various breakout boards, a TQFP chip adapter, and a basic LD33V power supply were used. Code for a clock, stopwatch, timer, the sensors, and wifi module was developed.
 <figure>
     <figcaption>First Prototype</figcaption>
     <img src="Images/20230211_151912.jpg" width="356" height="200">
