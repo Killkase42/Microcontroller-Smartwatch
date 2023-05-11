@@ -15,6 +15,7 @@
 # First Prototype
  Drawing were made of each components and its respective connections. 
 ![Microcontroller](Images/20230507_133534.jpg)
+<img src="Images/20230507_133534.jpg" width="200" height="100">
 <center>Microcontroller</center>
 
 ![Wifi Module](Images/20230507_133614.jpg)
