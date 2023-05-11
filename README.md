@@ -15,7 +15,7 @@
 # First Prototype
  Drawing were made of each components and its respective connections. 
 <figure>
-    <img src="Images/20230507_133534.jpg" width="203" height="200" alt="Micro">
+    <img src="Images/20230507_133534.jpg" >
     <figcaption>Microcontroller</figcaption>
 </figure>
 
