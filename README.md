@@ -42,12 +42,12 @@
 
  An initial prototype was then constructed on a solderless breadboard. Various breakout boards, a TQFP chip adapter, and a basic LD33V power supply were used.
 <figure>
-    <figcaption>First Prototype>/figcaption>
+    <figcaption>First Prototype</figcaption>
     <img src="Images/20230211_151912.jpg" width="356" height="200">
 </figure>
  
  The first prototype had numerous problems, mainly caused by the poor connections between the breadboard plates and the component legs. This resulted in a very unreliable supply of current and voltage as some connections, in parallel in series respectively, were barely touching and provided high resistance. Ultimately, this caused the malfunction of the wifi module, which required a high current and stable voltage. The components were all soldered onto perfboard to fix this. As can be seen, the wifi module problem was rectified.
 <figure>
-    <figcaption>Second Prototype>/figcaption>
+    <figcaption>Second Prototype</figcaption>
     <img src="Images/20230216_144904.jpg" width="356" height="200">
 </figure>
