@@ -15,24 +15,28 @@
 # First Prototype
  Drawing were made of each components and its respective connections. 
 <figure>
-    <img src="Images/20230507_133534.jpg" >
+    <img src="Images/20230507_133534.jpg" width="203" height="200">
     <figcaption>Microcontroller</figcaption>
 </figure>
+
 
 <figure>
     <img src="Images/20230507_133614.jpg" width="185" height="200">
     <figcaption>Wifi Module</figcaption>
 </figure>
 
+
 <figure>
     <img src="Images/20230507_133515.jpg" width="293" height="200">
     <figcaption>Sensor Module</figcaption>
 </figure>
 
+
 <figure>
     <img src="Images/20230507_133628.jpg" width="162" height="200">
     <figcaption>OLED Screen</figcaption>
 </figure>
+
 
 <figure>
     <img src="Images/20230507_133550.jpg" width="304" height="200">
