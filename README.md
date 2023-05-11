@@ -13,7 +13,7 @@
 -  [Power Supply IC (MT3608)](https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf)
 
 # First Prototype
- Drawing were made of each components and its respective connections. 
+ Drawings were made of each components and its respective connections. 
 <figure>
     <figcaption>Microcontroller</figcaption>
     <img src="Images/20230507_133534.jpg" width="203" height="200">
@@ -40,4 +40,14 @@
     <img src="Images/20230507_133550.jpg" width="304" height="200">
 </figure>
 
-
+ An initial prototype was then constructed on a solderless breadboard. Various breakout boards, a TQFP chip adapter, and a basic LD33V power supply were used.
+<figure>
+    <figcaption>First Prototype>/figcaption>
+    <img src="Images/20230211_151912.jpg" width="356" height="200">
+</figure>
+ 
+ The first prototype had numerous problems, mainly caused by the poor connections between the breadboard plates and the component legs. This resulted in a very unreliable supply of current and voltage as some connections, in parallel in series respectively, were barely touching and provided high resistance. Ultimately, this caused the malfunction of the wifi module, which required a high current and stable voltage. The components were all soldered onto perfboard to fix this. As can be seen, the wifi module problem was rectified.
+<figure>
+    <figcaption>Second Prototype>/figcaption>
+    <img src="Images/20230216_144904.jpg" width="356" height="200">
+</figure>
