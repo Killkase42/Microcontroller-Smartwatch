@@ -67,3 +67,24 @@ Next, a PCB was designed. It was double-sided because there was not enough space
     <figcaption>First PCB</figcaption>
     <img src="Images/firstPCB.PNG" width="190" height="200">
 </figure>
+
+All components, the PCB, and the stencil were then purchased. 
+
+The stencil was cut, placed over one of the PCBs, and then solder paste applied overtop of it.
+<figure>
+    <figcaption>Stencil and Solder Paste</figcaption>
+    <img src="Images/20230520_213814.jpg" width="200" height="200">
+</figure>
+
+All SMD components were then placed on the board. The solder paste was reflowed via bottom heating. A pot with sand in it, used to evenly disperse heat, was used for bottom heating.
+<figure>
+    <figcaption>Bottom Heating</figcaption>
+    <img src="Images/20230520_225355.jpg" width="200" height="200">
+</figure>
+
+The remaining THT components and the battery were then soldered to the board using a soldering iron.
+<figure>
+    <figcaption>Finished Board</figcaption>
+    <img src="Images/20230522_143414.jpg" width="200" height="200">
+</figure>
+
