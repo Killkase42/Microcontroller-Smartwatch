@@ -84,7 +84,14 @@ All SMD components were then placed on the board. The solder paste was reflowed 
 
 The remaining THT components and the battery were then soldered to the board using a soldering iron.
 <figure>
-    <figcaption>Finished Board</figcaption>
+    <figcaption>Nearly-finished Board</figcaption>
     <img src="Images/20230522_143414.jpg" width="200" height="200">
 </figure>
 
+The OLED screen was then soldered atop thhe board, but did not display anything when the circuit was powered through the battery or an external 3.3 volts. Clearly, there was a big problem with the circuit. Every part of the design was reviewed and another blank PCB probed. The following potential causes were identified:
+
+- PCB Stencil was initially not properly secured to the PCB, leading to improper solder paste application, so the new attachment method in the above picture was devised. The stencil was not properly cleaned before this second application, though, and some holes were blocked by old paste. This may have lead to improper application.
+- Too much sand was used in the bottom-heating process. This was due to the excessive heat-up time, during which the MCU may have broken.
+- When the reflow was complete, several components did not have enough solder connecting them to the board. This lead to extensive rework and possible damage of the MCU.
+
+Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed by rebuilding an identical second version which worked.
