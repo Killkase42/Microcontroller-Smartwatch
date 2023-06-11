@@ -84,14 +84,17 @@ All SMD components were then placed on the board. The solder paste was reflowed 
 
 The remaining THT components and the battery were then soldered to the board using a soldering iron.
 <figure>
-    <figcaption>Nearly-finished Board</figcaption>
+    <figcaption>Second Prototype, First Iteration</figcaption>
     <img src="Images/20230522_143414.jpg" width="200" height="200">
 </figure>
 
-The OLED screen was then soldered atop thhe board, but did not display anything when the circuit was powered through the battery or an external 3.3 volts. Clearly, there was a big problem with the circuit. Every part of the design was reviewed and another blank PCB probed. The following potential causes were identified:
+The OLED screen was then soldered atop the board, but did not display anything when the circuit was powered through the battery or an external 3.3 volts. The MCU was pre-programmed in this instance, but it could not be detected by the IDE while soldered onto the board. Clearly, there was a big problem with the circuit. Every part of the design was reviewed and another blank PCB probed. The following potential causes were identified:
 
 - PCB Stencil was initially not properly secured to the PCB, leading to improper solder paste application, so the new attachment method in the above picture was devised. The stencil was not properly cleaned before this second application, though, and some holes were blocked by old paste. This may have lead to improper application.
 - Too much sand was used in the bottom-heating process. This was due to the excessive heat-up time, during which the MCU may have broken.
 - When the reflow was complete, several components did not have enough solder connecting them to the board. This lead to extensive rework and possible damage of the MCU.
 
-Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed by rebuilding an identical second version which worked.
+Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed in a second assembley of the PCB, in which the MCU was detected by the IDE, but the OLED still did not display anything when connected and powered. At this point, research was conducted to identify the cause of the continuing problem. The following potential causes were identified:
+
+- Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
+- 
