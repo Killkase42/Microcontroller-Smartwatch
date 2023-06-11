@@ -106,3 +106,7 @@ The OLED, however, still did not display anything when connected and powered. At
 - Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
     - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
     - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/ )
+
+To solve the issue, the circuit was modified to include pullup resistors on all unconnected pins. Internal pullup resistors were used on the pins they were available on and external resistors on the others.
+
+Second Schematic
