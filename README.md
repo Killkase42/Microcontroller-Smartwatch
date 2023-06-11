@@ -95,7 +95,13 @@ The OLED screen was then soldered atop the board, but did not display anything w
 - Too much sand was used in the bottom-heating process. This was due to the excessive heat-up time, during which the MCU may have broken.
 - When the reflow was complete, several components did not have enough solder connecting them to the board. The long heat-up time also lead to the flux in the solder paste burning off completely. This lead to extensive rework and possible damage of the MCU.
 
-Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed in a second assembley of the PCB, in which the MCU was detected by the IDE, but the OLED still did not display anything when connected and powered. At this point, research was conducted to identify more possible causes of the continuing problem. The following potential causes were identified:
+Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed in a second assembley of the PCB, in which the MCU was detected by the IDE.
+<figure>
+    <figcaption>Second Prototype, Second Iteration</figcaption>
+    <img src="Images/20230610_202144.jpg" width="200" height="200">
+</figure>
+
+The OLED, however, still did not display anything when connected and powered. At this point, research was conducted to identify more possible causes of the continuing problem. The following potential causes were identified:
 
 - Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
     - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
