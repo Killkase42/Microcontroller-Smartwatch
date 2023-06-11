@@ -92,9 +92,10 @@ The OLED screen was then soldered atop the board, but did not display anything w
 
 - PCB Stencil was initially not properly secured to the PCB, leading to improper solder paste application, so the new attachment method in the above picture was devised. The stencil was not properly cleaned before this second application, though, and some holes were blocked by old paste. This may have lead to improper application.
 - Too much sand was used in the bottom-heating process. This was due to the excessive heat-up time, during which the MCU may have broken.
-- When the reflow was complete, several components did not have enough solder connecting them to the board. This lead to extensive rework and possible damage of the MCU.
+- When the reflow was complete, several components did not have enough solder connecting them to the board. The long heat-up time also lead to the flux in the solder paste burning off completely. This lead to extensive rework and possible damage of the MCU.
 
-Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed in a second assembley of the PCB, in which the MCU was detected by the IDE, but the OLED still did not display anything when connected and powered. At this point, research was conducted to identify the cause of the continuing problem. The following potential causes were identified:
+Ultimately, it was concluded that improper assembley left the circuit inoperable. This was fixed in a second assembley of the PCB, in which the MCU was detected by the IDE, but the OLED still did not display anything when connected and powered. At this point, research was conducted to identify more possible causes of the continuing problem. The following potential causes were identified:
 
 - Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
-- 
+ - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
+ - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/ )
