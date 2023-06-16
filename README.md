@@ -107,6 +107,8 @@ The OLED, however, still did not display anything when connected and powered. At
     - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
     - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/ )
 
+Additional research on general PCB assembley was also conducted to improve the next design.
+
 To solve the issue, the circuit was modified to include pullup resistors on all unconnected pins. Internal pullup resistors were used on the pins they were available on and external resistors on the others.
 
 Second Schematic
