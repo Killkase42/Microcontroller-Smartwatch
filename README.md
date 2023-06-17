@@ -105,7 +105,14 @@ The OLED, however, still did not display anything when connected and powered. At
 
 - Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
     - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
-    - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/ )
+    - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/)
+- There were several excessively-long signal traces on the PCB. In addition to potentially picking up unwanted signals, they could have been capacitively coupled to a degree that interfered too much with their signals.
+    - [Source: camptechii.com](https://camptechii.com/improve-your-pcb-design-and-reduce-manufacturing-headaches-with-these-18-pcb-layout-tips/)
+
+Some less-critical issues were also found:
+- The battery was not referenced to the ground of the entire circuit due to a misunderstanding of the example circuit on the datasheet. This would have caused problems when the power source was switched from test leads to the battery.
+- The LiPO protection IC's exposed pad was not grounded, as specified on the datasheet.
+- The step-up converter IC was accompanied by the lowest-value reccommended inductor specified by the datasheet. With the wifi module demanding a peak of five-hundred milliamps at three point three volts, this may have lead to inductor saturation.
 
 Additional research on general PCB assembley was also conducted to improve the next design.
 
