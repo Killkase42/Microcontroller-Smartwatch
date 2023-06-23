@@ -113,6 +113,7 @@ Some less-critical issues were also found:
 - The battery was not referenced to the ground of the entire circuit due to a misunderstanding of the example circuit on the datasheet. This would have caused problems when the power source was switched from test leads to the battery.
 - The LiPO protection IC's exposed pad was not grounded, as specified on the datasheet.
 - The step-up converter IC was accompanied by the lowest-value reccommended inductor specified by the datasheet. With the wifi module demanding a peak of five-hundred milliamps at three point three volts, this may have lead to inductor saturation.
+- The pin that activated the step-up converter IC was not connected to 3.3 volts, meaning it was not activated.
 
 Additional research on general PCB assembley was also conducted to improve the next design.
 
