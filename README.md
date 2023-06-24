@@ -108,8 +108,7 @@ The OLED, however, still did not display anything when connected and powered. At
     - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/)
 - There were several excessively-long signal traces on the PCB. In addition to potentially picking up unwanted signals, they could have been capacitively coupled to a degree that interfered too much with their signals.
     - [Source: camptechii.com](https://camptechii.com/improve-your-pcb-design-and-reduce-manufacturing-headaches-with-these-18-pcb-layout-tips/)
-
-- The reset pin on the MCU did not have a pullup resistor and had a fairly long programming wire, which could have lead to it picking up signals and resetting unintentionally.
+- The programming ports and reset pin on the MCU did not have pullup resistors and had fairly long programming wires, which could have lead to them picking up signals and resetting the MCU unintentionally.
 
 Some less-critical issues were also found:
 - The battery was not referenced to the ground of the entire circuit due to a misunderstanding of the example circuit on the datasheet. This would have caused problems when the power source was switched from test leads to the battery.
