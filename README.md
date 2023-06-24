@@ -59,7 +59,7 @@ All modules now functioned and software development would continue on a second p
 
 First, a proper schematic was drawn.
 <figure>
-    <figcaption>First Schematic</figcaption>
+    <figcaption>Schematic IIAc</figcaption>
     <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-05-11.png" width="282" height="200">
 </figure>
 
@@ -116,8 +116,6 @@ Some less-critical issues were also found:
 - The step-up converter IC was accompanied by the lowest-value reccommended inductor specified by the datasheet. With the wifi module demanding a peak of five-hundred milliamps at three point three volts, this may have lead to inductor saturation.
 - The pin that activated the step-up converter IC was not connected to 3.3 volts, meaning it was not activated.
 
-Additional research on general PCB assembley was also conducted to improve the next design.
+ The identified issues were resolved and additional research on general PCB assembley was also conducted to improve the next design. A simple voltage checker was also implemented to estimate the charge of the battery.
 
-To solve the issue, the circuit was modified to include pullup resistors on all unconnected pins. Internal pullup resistors were used on the pins they were available on and external resistors on the others.
-
-Second Schematic
+Schematic IIB
