@@ -59,7 +59,7 @@ All modules now functioned and software development would continue on a second p
 
 First, a proper schematic was drawn.
 <figure>
-    <figcaption>Schematic IIAc</figcaption>
+    <figcaption>Schematic IIA</figcaption>
     <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-05-11.png" width="282" height="200">
 </figure>
 
@@ -118,4 +118,7 @@ Some less-critical issues were also found:
 
  The identified issues were resolved and additional research on general PCB assembley was also conducted to improve the next design. A simple voltage checker was also implemented to estimate the charge of the battery.
 
-Schematic IIB
+<figure>
+    <figcaption>Schematic IIB</figcaption>
+    <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-06-23.png" width="282" height="200">
+</figure>
