@@ -65,7 +65,7 @@ First, a proper schematic was drawn.
 
 Next, a PCB was designed. It was double-sided because there was not enough space to route all connections on one side. Spaces were left to screw on the OLED screen and insert a standard NATO watch strap.
 <figure>
-    <figcaption>First PCB</figcaption>
+    <figcaption>PCB IIA</figcaption>
     <img src="Images/firstPCB.PNG" width="190" height="200">
 </figure>
 
@@ -111,6 +111,7 @@ The OLED, however, still did not display anything when connected and powered. At
 - The programming ports and reset pin on the MCU did not have pullup resistors and had fairly long programming wires, which could have lead to them picking up signals and resetting the MCU unintentionally.
 
 Some less-critical issues were also found:
+
 - The battery was not referenced to the ground of the entire circuit due to a misunderstanding of the example circuit on the datasheet. This would have caused problems when the power source was switched from test leads to the battery.
 - The LiPO protection IC's exposed pad was not grounded, as specified on the datasheet.
 - The step-up converter IC was accompanied by the lowest-value reccommended inductor specified by the datasheet. With the wifi module demanding a peak of five-hundred milliamps at three point three volts, this may have lead to inductor saturation.
