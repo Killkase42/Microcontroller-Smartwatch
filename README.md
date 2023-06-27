@@ -123,5 +123,10 @@ Some less-critical issues were also found:
 
 <figure>
     <figcaption>Schematic IIB</figcaption>
-    <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-06-23.png" width="282" height="200">
+    <img src="Images/schematiciib.png" width="282" height="200">
+</figure>
+
+<figure>
+    <figcaption>PCB IIB</figcaption>
+    <img src="Images/pcbiib.PNG" width="200" height="200">
 </figure>
