@@ -59,13 +59,13 @@ All modules now functioned and software development would continue on a second p
 
 First, a proper schematic was drawn.
 <figure>
-    <figcaption>Schematic IIA</figcaption>
+    <figcaption>Schematic 2</figcaption>
     <img src="Images/Schematic_Microcontroller Smartwatch Schematic 2_2023-05-11.png" width="282" height="200">
 </figure>
 
 Next, a PCB was designed. It was double-sided because there was not enough space to route all connections on one side. Spaces were left to screw on the OLED screen and insert a standard NATO watch strap.
 <figure>
-    <figcaption>PCB IIA</figcaption>
+    <figcaption>PCB 2</figcaption>
     <img src="Images/firstPCB.PNG" width="190" height="200">
 </figure>
 
@@ -121,12 +121,14 @@ Some less-critical issues were also found:
 
  The identified issues were resolved and additional research on general PCB assembley was also conducted to improve the next design. A simple voltage checker was also implemented to estimate the charge of the battery.
 
+# Third Prototype
+
 <figure>
-    <figcaption>Schematic IIB</figcaption>
+    <figcaption>Schematic 3</figcaption>
     <img src="Images/schematiciib.png" width="282" height="200">
 </figure>
 
 <figure>
-    <figcaption>PCB IIB</figcaption>
+    <figcaption>PCB 3</figcaption>
     <img src="Images/pcbiib.PNG" width="200" height="200">
 </figure>
