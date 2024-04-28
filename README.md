@@ -133,4 +133,24 @@ Some less-critical issues were also found:
     <img src="Images/pcbiib.PNG" width="200" height="200">
 </figure>
 
+<figure>
+    <figcaption>Third Prototype, After Rework</figcaption>
+    <img src="Images/20240428_183047.jpg" width="200" height="200">
+</figure>
+
 # Final Version
+
+<figure>
+    <figcaption>Final Schematic</figcaption>
+    <img src="Images/Schematic_Microcontroller-Smartwatch-Schematic-2_2024-04-28.png" width="282" height="200">
+</figure>
+
+<figure>
+    <figcaption>Final PCB</figcaption>
+    <img src="Images/pcbFinal.png" width="200" height="200">
+</figure>
+
+<figure>
+    <figcaption>Final Version</figcaption>
+    <img src="Images/20240428_173908.jpg" width="200" height="200">
+</figure>
