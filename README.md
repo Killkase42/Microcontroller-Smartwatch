@@ -132,3 +132,5 @@ Some less-critical issues were also found:
     <figcaption>PCB 3</figcaption>
     <img src="Images/pcbiib.PNG" width="200" height="200">
 </figure>
+
+# Final Version
