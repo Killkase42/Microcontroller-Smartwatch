@@ -175,7 +175,7 @@ Some less-critical issues were also found:
 
 [Picture with hardware and turned on]
 
-Several immportant changes were made in the final version; namely, the bootloader was uploaded to the stock MCU! This is why it did not work before. I'm entitled to a few stupid mistakes. The code was also completely overhauled to be much more efficient. No more sensor modules remained, so it was omitted from this version. All standard watch fucntions (clock, timer, stopwatch) worked well. The wifi module caused the MCU to freeze or display a static screen whenever on of its functions was called, likely due to improper connections. However, even with the shortcomings of several intended features, a viable product was finally produced after almost two years of work.
+Several important changes were made in the final version; namely, the bootloader was uploaded to the stock MCU! This is why it did not work before. I'm entitled to a few stupid mistakes. The code was also completely overhauled to be much more efficient. No more sensor modules remained, so it was omitted from this version. All standard watch fucntions (clock, timer, stopwatch) worked well. The wifi module caused the MCU to freeze or display a static screen whenever on of its functions was called, likely due to improper connections. However, even with the shortcomings of several intended features, a viable product was finally produced after almost two years of work.
 
 # Conclusions
 
