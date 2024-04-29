@@ -123,6 +123,7 @@ Some less-critical issues were also found:
 
 # Third Prototype
 
+The schematic of the third prototype was organised much more effectively than the previous ones.
 <figure>
     <figcaption>Schematic 3</figcaption>
     <img src="Images/schematiciib.png" width="282" height="200">
@@ -138,6 +139,23 @@ Some less-critical issues were also found:
     <img src="Images/20240428_183047.jpg" width="200" height="200">
 </figure>
 
+On this version, the OLED still did not power on, and therefore the functionality of the wifi and sensor modules could not be discerned. Much rework was done on the board and several points of error were identified:
+- The inductor was getting hotter than a scramjet combustion chamber, even burning away the risidual flux around it. An inductor with a lower DC resistance was needed.
+- A step-up convertor was used, whereas a [buck-boost convertor](https://www.lcsc.com/datasheet/lcsc_datasheet_1809200040_Texas-Instruments-TPS63020DSJR_C15483.pdf) was needed. This lead to an inadequate power supply.
+- Holes were made through the pads, even the very small ones, as opposed to using descrete vias. The holes made improper solder joints more likely.
+- There was no power plane and the ground plane did not conform to the entirety of the board, potentially leading to interference. It would be far better to simply use a four-layered board.
+    - [Source: Image](Images/gnd and vcc planes.jpg)
+- Several of the board's metal reinforcements were not grounded and may have caused excessive impedence.
+- The MCU programming holes were really shoddy and disorganised, which greatly slowed development. A robust system was needed.
+- Several decoupling capacitors for the wifi module were missing due to a misunderstanding of the example schematic.
+    - [Source: Image](https://cdn-learn.adafruit.com/assets/assets/000/080/457/original/adafruit_products_schematic.png?1567623352)
+- For the charging USB, all of the 5V input lines were connected and used, while only one was neccessary. Given the somewhat-messy reflow soldering and that several pads were hidden under the USB, it was better to remove the suspicion of an unintentional solder bridge by only using one.
+
+Some less-critical issues were also found:
+- The trace routing was still sloppy. Better use of the bottom plane was required for shorter, cleaner traces.
+- The silkscreen lettering of each component's I.D. looked messy and may have confused component placement. On such a small and relatively simple board it could be done away with entirely.
+- The resistor on the LiPO charging subcircuit had too high a value (300k) and would have lead to excessive charging times. It was replaced with a 10k.
+
 # Final Version
 
 <figure>
@@ -151,6 +169,14 @@ Some less-critical issues were also found:
 </figure>
 
 <figure>
-    <figcaption>Final Version</figcaption>
+    <figcaption>Final Version (Without OLED and Hardware)</figcaption>
     <img src="Images/20240428_173908.jpg" width="200" height="200">
 </figure>
+
+[Picture with hardware and turned on]
+
+Several immportant changes were made in the final version; namely, the bootloader was uploaded to the stock MCU! This is why it did not work before. I'm entitled to a few stupid mistakes. The code was also completely overhauled to be much more efficient. No more sensor modules remained, so it was omitted from this version. All standard watch fucntions (clock, timer, stopwatch) worked well. The wifi module caused the MCU to freeze or display a static screen whenever on of its functions was called, likely due to improper connections. However, even with the shortcomings of several intended features, a viable product was finally produced after almost two years of work.
+
+# Conclusions
+
+This project encountered many setbacks but proved to be an invaluable learning experience. Areas such as basic electrics, electronics, microcontrollers, programming, PCB design and assembly, troubleshooting, and product development were explored in great detail. 
