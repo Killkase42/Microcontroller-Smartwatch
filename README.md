@@ -144,7 +144,7 @@ On this version, the OLED still did not power on and therefore the functionality
 - A step-up convertor was used, whereas a [buck-boost convertor](https://www.lcsc.com/datasheet/lcsc_datasheet_1809200040_Texas-Instruments-TPS63020DSJR_C15483.pdf) was needed. This lead to an inadequate power supply.
 - Holes were made through the pads, even the very small ones, as opposed to using descrete vias. The holes made improper solder joints more likely.
 - There was no power plane and the ground plane did not conform to the entirety of the board, potentially leading to interference. It would be far better to simply use a four-layered board.
-    - [Source: Image](Images/gnd and vcc planes.jpg)
+    - [Source: Image](https://github.com/Killkase42/Microcontroller-Smartwatch/blob/6a74dc252c42ad7c9e938e8ccc919e09cb8a5b8e/Images/gnd%20and%20vcc%20planes.jpg)
 - Several of the board's metal reinforcements were not grounded and may have caused excessive impedance.
 - The MCU programming holes were shoddy and disorganised, which greatly slowed development. A robust system with machine pins was needed.
 - Several decoupling capacitors for the wifi module were missing due to a misunderstanding of the example schematic.
