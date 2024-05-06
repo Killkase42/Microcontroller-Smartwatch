@@ -3,7 +3,6 @@
 
 # Initial Planning
   The original objective was to create a basic smartwatch with a standalone MCU, LCD screen, wifi capabilities, and various sensors. The ATSAMD21G18A was selected as the foundation of the project due to its excellent memory, high processing speed, low power consumption, small size, and versitility. The Nina-W102 was selected as the wifi module because of its ease of use and wealth of documentation. The other components were selected because they also had much supporting information to aid in their use.
-  
 -  [MCU (ATSAMD21G18A)](https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf)
 -  [WiFi Module (Nina-W102)](https://content.u-blox.com/sites/default/files/NINA-W10_DataSheet_UBX-17065507.pdf)
 -  [Sensor Module (MS8607-02BA01)](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS8607-02BA01%7FB3%7Fpdf%7FEnglish%7FENG_DS_MS8607-02BA01_B3.pdf%7FCAT-BLPS0018)
@@ -90,7 +89,6 @@ The remaining THT components and the battery were then soldered to the board usi
 </figure>
 
 The OLED screen was then soldered atop the board, but did not display anything when the circuit was powered through the battery or an external 3.3 volts. The MCU was pre-programmed in this instance, but it could not be detected by the IDE while soldered onto the board. Clearly, there was a big problem with the circuit. Every part of the design was reviewed and another blank PCB probed. The following potential causes were identified:
-
 - PCB Stencil was initially not properly secured to the PCB, leading to improper solder paste application, so the new attachment method in the above picture was devised. The stencil was not properly cleaned before this second application, though, and some holes were blocked by old paste. This may have lead to improper application.
 - Too much sand was used in the bottom-heating process. This was due to the excessive heat-up time, during which the MCU may have broken.
 - When the reflow was complete, several components did not have enough solder connecting them to the board. The long heat-up time also lead to the flux in the solder paste burning off completely. This lead to extensive rework and possible damage of the MCU.
@@ -102,7 +100,6 @@ Ultimately, it was concluded that improper assembley left the circuit inoperable
 </figure>
 
 The OLED, however, still did not display anything when connected and powered. At this point, research was conducted to identify more possible causes of the continuing problem. The following potential causes were identified:
-
 - Unused inputs on the MCU were left floating, likely causing them to pick up interfering signals and disrupt the MCU's clock speed. This was not a problem on the first prototype since all of the components were spaced out, but was thought to be a problem on the second one due the closer proximity of the components. For example, there were several capacitors near unconnected pins and their electric fields could have caused the problem. There were also the unshielded charging/protecting ICs that also involved rapidly changing electric fields.
     - [Source: altium.com](https://resources.altium.com/p/what-do-unused-pins-microcontroller)
     - [Source: instructables.com](https://www.instructables.com/7-reasons-Your-Circuit-Isnt-Working/)
@@ -113,7 +110,6 @@ The OLED, however, still did not display anything when connected and powered. At
 - The programming ports and reset pin on the MCU did not have pullup resistors and had fairly long programming wires, which could have lead to them picking up signals and resetting the MCU unintentionally.
 
 Some less-critical issues were also found:
-
 - The battery was not referenced to the ground of the entire circuit due to a misunderstanding of the example circuit on the datasheet. This would have caused problems when the power source was switched from test leads to the battery.
 - The LiPO protection IC's exposed pad was not grounded, as specified on the datasheet.
 - The step-up converter IC was accompanied by the lowest-value reccommended inductor specified by the datasheet. With the wifi module demanding a peak of five-hundred milliamps at three point three volts, this may have lead to inductor saturation.
